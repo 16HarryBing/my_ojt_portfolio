@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <title>My Fortfolio</title>
+</head>
+<style> 
+*{ 
+    margin: 0;
+    color: #ffff;
+}
+html { 
+    scroll-behavior: smooth;
+}
+
+.h2 { 
+    margin-top: 10rem ;
+    background: #fffdfd54;
+}
+ #portfolio { 
+    margin-top: -17rem;
+    padding-top: 20rem;
+    height: 700px;
+    background:url(logo.jpg);
+    background-repeat: no-repeat; 
+    background-size:cover;
+}
+#about { 
+    height: 700px;
+    background:url(about.jpg);
+    background-repeat: no-repeat; 
+    background-size:cover;
+}
+#about h3{ 
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    background: #000000;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: -17rem;
+    margin-left: 35rem;
+    width: 20rem;
+    color: rgb(231, 110, 54) ;
+    border-radius: 20px;
+}
+#about h3 span{
+    color:rgb(0, 0, 0);
+    background:rgb(231, 110, 54);
+    padding: 0rem 1rem 0rem 1rem ;
+    border-radius: 20px;
+}
+#contact { 
+    height: 700px;
+    background: #000;
+}
+#project { 
+    height: 700px;
+    background: #000;
+}
+#project h3 { 
+    top: 148rem;
+    left: 30rem;
+    width: 30rem;
+    position: absolute;
+    color:rgb(231, 110, 54) ;
+    font-size: 50px;
+    font-family:'Anton', sans-serif;
+    padding: 1rem 2rem 1rem 2rem;
+    font-weight: 900;
+}
+#project h3 span { 
+    color:rgb(0, 0, 0);
+    background:rgb(231, 110, 54);
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem ;
+    border-radius: 20px;
+}
+.school { 
+    margin-left: -25rem;
+ }
+ .skill { 
+    display: flex;
+    justify-content: center;
+    margin-left: 55rem;
+    margin-top: -6rem;
+    width: 7rem;
+ }
+.navlist { 
+    position: sticky;
+    top: 0%;
+    background: black;
+    
+}
+.navlist ul{ 
+    margin-left: 53%;
+    height: 3.5rem;
+    padding-bottom: .5rem;
+    
+    
+}
+.navlist ul a { 
+    display: inline-block;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(231, 110, 54);
+    font-family: 'Lato', sans-serif;
+    transition: ease-in-out .3s;
+    
+}
+.navlist ul a:hover { 
+    text-decoration: dotted;
+    color: #bbc52d;
+}
+a { 
+    text-decoration: none;
+    color: rgb(231, 110, 54)
+}
+.logo { 
+    margin-left: -45rem;
+    margin-right: 30rem;
+    font-size: 30px;
+    font-family: 'Barlow', sans-serif; 
+}
+.profile { 
+    text-align: left;
+    margin-left: 1.5rem;
+    line-height: 2rem;
+    margin-top: 7rem;
+    width: 35rem;
+    height: 10rem;
+    padding: 1rem 2rem;
+}
+.profile p { 
+    color:#854525;
+}
+.greetings { 
+    padding-top: 1rem ;
+    font-size: 30px;
+    font-family: 'Barlow', sans-serif;
+    margin-left: 13rem;
+    line-height: 5rem;
+    cursor: pointer;
+    
+   
+}
+p { 
+    margin-top: .5rem;
+    font-family: 'Anton', sans-serif;
+    font: weight 300px;;
+    margin-left: 2rem;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 5px;
+}
+h1 {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    color:  rgb(231, 110, 54);
+    font-size: 50px;
+}   
+#about img { 
+    width: 20%;
+    height: 39%;
+    border: solid #ffff;
+    border-radius: 50%;
+    margin-top: 4rem;
+    margin-left: 5rem;
+
+}
+.container { 
+    margin-left: 25rem;
+    margin-right: 15rem;
+    margin-top: 1rem;
+    padding: 0 3px -4px 0;
+    height: 26rem;
+    background: #38353554;
+    border-radius: 2rem;
+    box-shadow: 0 2px 0px 3px rgb(51, 50, 50);
+    line-height: 1.9rem;
+
+    
+} 
+.container p { 
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    color:#c9825f;
+
+}
+.myprofile{ 
+    position: absolute;
+    top: 72rem;
+    left: 2rem;
+} 
+.myprofile p { 
+    color: #854525;
+    margin-left: -.5rem;
+}
+.myprofile h1 { 
+    font-size: 36px;
+    font-weight: 500;
+}
+.info span{ 
+    display: block;
+    font-size: 15px;
+    margin-top: 1.2rem;
+    line-height: .4rem;
+    letter-spacing: .2rem;
+    font-family: 'Labrada', serif;
+} 
+.bold { 
+    font-weight: bolder;
+    color: #f15f26;
+}
+.info { 
+    position: absolute;
+    top: 76rem;
+    left: 2rem;
+}
+.minicontainer { 
+    margin-top: -15rem;
+    width: 30rem;
+    height: 23.5rem;
+}
+.socialmedia ul li  { 
+    display: inline-block;
+    list-style: none;
+    margin-top: 13rem;
+    margin-left: .5rem;
+    font-size: 30px;
+    letter-spacing: 25px;
+}
+.socialmedia ul li:hover { 
+    transform: translate(0,-10px);
+}
+#contact img { 
+    margin-top: 5rem;
+    width: 35rem;
+    height: 27rem;
+    border: solid #ffff;
+    border-radius: 0 20rem 20rem 0rem;
+    margin-left: -3rem;
+}
+.submitform { 
+    margin-left: 46rem ;
+    margin-top: -24rem;
+
+
+}
+.submitform ul { 
+    height: 3rem;
+    width: 25rem;
+    margin-top: 3rem;
+    margin-left: -3rem;
+}
+.submitform ul li { 
+    height: -15px;
+    margin-top: .5rem;
+    display: block;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -10rem;
+    
+    /* background: #ffff; */
+}
+.submitform i { 
+    font-size: 2rem;
+    padding-right: 3rem;
+} 
+.submitform ul li span { 
+    color: #cceecc;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+
+}
+.submitform .contactme span{ 
+    background: rgb(0, 0, 0);
+    color: rgb(231, 110, 54);
+    padding:0rem 3rem 1rem 3rem;
+    font-size: 50px;
+    font-weight: 900;
+    border-radius: 5px 0 0 5px;
+    font-family:'Kanit', sans-serif;
+    margin-left: -10rem;
+    
+}
+.submitform .contactme .span { 
+    margin-top: 50rem;
+    margin-left: -3rem;
+    background: rgb(231, 110, 54);
+    padding:.2rem 2rem .2rem 2rem;
+    text-align: center;
+    border-radius: 20px;
+    color: #000000;
+    letter-spacing: 1px;
+}
+.bi-facebook { 
+    color: rgb(24,119,242);
+}
+.bi-twitter { 
+    color: rgb(29, 161, 242);
+}
+.bi-instagram { 
+    color: rgb(244, 111, 48);
+}
+.bi-discord { 
+    color: rgb(88, 101, 242);
+}
+.bi-messenger { 
+    color: rgb(0 106 255);
+}
+.bi-envelope-at-fill { 
+    color: rgb(151, 138, 24);
+}
+.bi-telephone-fill { 
+    letter-spacing: 1px;
+    color: rgb(230, 210, 38);
+}.bi-geo-alt-fill { 
+    color: red;
+}
+.bi-youtube { 
+    color: #832c00;
+}
+
+</style>
+<body>
+    <div class="navlist">
+        <ul>
+            <a class="logo" href="#portfolio">PORTFOLIO</a>
+            <a href="#about"> ABOUT</a>
+            <a href="#contact">CONTACT</a>
+             <a href="#project"> SCHOOL & SKILLS </a>
+        </ul>
+    </div>
+    <header id="header "> 
+    </header>
+
+    <section id="portfolio"> 
+        <div class="profile">
+            <div class="greetings">Hello, I'am</div> 
+            <div class="name"><h1>Harry Bing </h1></div>  
+            <p>INTERN | University of Antique</p>    
+        </div>
+    </section>
+    
+    <section id="about"> 
+        
+        <img src="aboutlogo.jpg">
+        <div class="title">
+            <h3> Who <span>am I?</span> </h3>
+            </div>
+        <div class="container">
+            <p>Hello! My name is Harry Bing Raba II, and I am a university intern from the University of Antique. I am currently pursuing Bachelor of Science in Information Technology, and I am excited to be gaining real-world experience in my chosen field. As an intern, I am eager to learn and contribute to my team in any way I can. I am hardworking, detail-oriented, and always willing to go the extra mile to ensure that tasks are completed to the best of my ability. When I'm not working, I enjoy watching playing online games and coding, and I'm always up for a good conversation about life. I look forward to the opportunities and challenges that lie ahead in my internship and beyond!</p>
+        </div>
+        <div class="minicontainer">
+        <div class="myprofile">
+           <h1>Harry Bing Raba II </h1> 
+           <p>INTERN | University of Antique</p>
+        </div>
+        <div class="info">
+           <span class="bold">Birdate: </span><span>09/16/2000</span>
+           <span class="bold">Course:</span><span>BS Information Technology</span>
+            <span class="bold">Location:</span><span>Butuan, Anini-y, Antique</span>
+        </div>
+        <div class="socialmedia">
+            <ul>
+                <li><i class="bi bi-facebook"></i></li>
+                <li><i class="bi bi-instagram"></i></li>
+                <li><i class="bi bi-youtube"></i></li>
+                <li><i class="bi bi-twitter"></i></li>
+                <li><i class="bi bi-messenger"></i></li>
+            </ul>
+        </div>
+        </div>
+    </section>
+    
+    <section id="contact"> 
+        <img src="contact.jpg">
+        <div class="submitform">
+            <div class="contactme"> 
+               <span> Contact </span> <span class="span"> Me</span>
+            </div>
+                <ul>
+                    <li><span class="facebook"><i class="bi bi-facebook"></i> @ Harry Bing Raba II</span> </li>
+                    <li><span class="instagram"><i class="bi bi-instagram"></i> @ ab_raba</span></li>
+                    <li><span class="discord"><i class="bi bi-discord"></i> @ UA - Harry Bing Raba II</span></li>
+                    <li><span class="twitter"><i class="bi bi-twitter"></i> @ ab16</span></li>
+                    <li><span class="messenger"><i class="bi bi-messenger"></i> @ Harry Bing Raba II</span></li>
+                    <li><span class="email"><i class="bi bi-envelope-at-fill"></i> @ harrybing.raba@antiquespride.edu.ph</span></li>
+                    <li><span class="cellphone"><i class="bi bi-telephone-fill"></i> +63 9092261099</span></li>
+                    <li><span class="location"><i class="bi bi-geo-alt-fill"></i> Butuan, Anini-y, Antique</span></li>
+                </ul>
+        </div>
+    </section>
+    <section id="project"> 
+        <h3 class="school"> Schools <span class="skill"> Skills</span></h3>
+       
+    </section>
+    
+    
+ 
+
+   
+</body>
+</html>
