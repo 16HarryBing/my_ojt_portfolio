@@ -61,11 +61,14 @@ html {
     background: #000;
 }
 #project { 
-    height: 700px;
+    height: 630px;
     background: #000;
 }
+#project .schoolrecord{ 
+    padding-top: 15rem;
+}
 #project h3 { 
-    top: 148rem;
+    top: 145rem;
     left: 30rem;
     width: 30rem;
     position: absolute;
@@ -179,9 +182,9 @@ h1 {
 .container { 
     margin-left: 25rem;
     margin-right: 15rem;
-    margin-top: 1rem;
+    margin-top: -1rem;
     padding: 0 3px -4px 0;
-    height: 26rem;
+    height: 27rem;
     background: #38353554;
     border-radius: 2rem;
     box-shadow: 0 2px 0px 3px rgb(51, 50, 50);
@@ -405,8 +408,49 @@ h1 {
                 </ul>
         </div>
     </section>
+    <style type = "text/css"> 
+        .schoolrecord ul li { 
+            list-style: none;
+            line-height: 2rem;
+        }
+        .schools { 
+            margin-left: 6rem;
+            font-size: 20px;
+            font-weight: 700;
+            color: rgb(231, 110, 54);
+            font-family: 'Lato', sans-serif;
+        }
+        .schoolname { 
+            font-size: 15px;
+            font-family: 'Lato', sans-serif;
+            margin-left: .5rem;
+            font-weight: 900;
+            color:#c9825f;
+            
+        }
+        #elem { 
+            margin-left: 3rem;
+        }
+        #college { 
+            margin-left: 4rem;
+        }
+        .schoolyear { 
+            margin-left: 5rem;
+            font-size: 15px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 900;
+            color:#c9825f;
+        }
+    </style>
     <section id="project"> 
         <h3 class="school"> Schools <span class="skill"> Skills</span></h3>
+        <div class="schoolrecord"> 
+            <ul> 
+                <li><span class="schools">Primary</span> <br><span class="schoolname" id="elem"> Anini-y Central School </span><br><span class="schoolyear">(2006 - 2013)</span></li>
+                <li><span class="schools">Secondary</span><br><span class="schoolname">Dao Catholic High School (Junior High School)</span> <br><span class="schoolname"> St. Anthony's College (Senior High School)</span> <br><span class="schoolyear" id="hsyear">(2013 - 2019)</span> </li>
+                <li><span class="schools">Tertiary</span> <br> <span class="schoolname" id="college">University of Antique</span> <br ><span class="schoolyear">(2019 - Present)</span></li>
+            </ul>
+        </div>
        
     </section>
     
